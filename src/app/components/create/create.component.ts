@@ -20,5 +20,14 @@ export class CreateComponent implements OnInit {
 
   onSubmit(form) {
     console.log(this.project);
+    this._projectService.saveProject(this.project).subscribe(
+      (response) => {
+        console.log(response);
+      },
+      (error) => {
+        console.log(<any>error);
+        console.log("eror aqui papu");
+      }
+    );
   }
 }
