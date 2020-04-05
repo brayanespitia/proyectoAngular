@@ -199,3 +199,21 @@ form input[disabled] {
   opacity: 0.4;
   cursor: not-allowed;
 }
+
+.message {
+  width: 60%;
+  padding: 5px;
+  border: 1px solid #eee;
+
+  color: green;
+}
+
+.succes {
+  color: green;
+}
+.message a {
+  color: blue;
+}
+.failed {
+  color: red;
+}
