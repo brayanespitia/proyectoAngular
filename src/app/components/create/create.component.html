@@ -40,7 +40,7 @@
         </p>
         <p>
             <label for="image">Imagen del proyecto</label>
-            <input type="file" name="image" placeholder="subir imagen">
+            <input type="file" name="image" placeholder="subir imagen" (change)="fileChangeEvent($event)" />
         </p>
 
         <input type="submit" value="enviar" [disabled]="!projectForm.form.valid">
